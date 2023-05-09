@@ -25,7 +25,6 @@ include_once("includes/header.php");
         <div class="project_div">
             <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/super-week/" target="_blank">
                 <h3 class="project_title">SUPER-WEEK</h3>
-                <!-- <img src="images/super-week.png" alt="super-week" class="project_img"> -->
                 <div class="img_div">
                     <div class="fadedbox">
                         <div class="description">Le but de ce projet était d'implémenter altourouter et l'architecture MVC en PHP et d'utiliser l'asyncrone en javascript.</div>
@@ -38,9 +37,22 @@ include_once("includes/header.php");
             </a>
         </div>
         <div class="project_div">
+            <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/boutique-en-ligne/view/" target="_blank">
+                <h3 class="project_title">BOUTIQUE EN LIGNE</h3>
+                <div class="img_div">
+                    <div class="fadedbox">
+                        <div class="description">Créer un site de e-commerce.</div>
+                    </div>
+                    <img src="images/boutique-en-ligne.png" alt="boutique en ligne" class="project_img"/>
+                </div>
+            </a>
+            <a href="https://github.com/alban-martinant-de-preneuf/boutique-en-ligne" target="_blank">
+                <p class="project_github">Github</p>
+            </a>
+        </div>
+        <div class="project_div">
             <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/voyages/" target="_blank">
                 <h3 class="project_title">VOYAGES</h3>
-                <!-- <img src="images/voyages.png" alt="voyages" class="project_img"> -->
                 <div class="img_div">
                     <div class="fadedbox">
                         <div class="description">Le but de ce projet était de consolider les compétences en html et css.</div>
@@ -55,7 +67,6 @@ include_once("includes/header.php");
         <div class="project_div">
             <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/site-la-plateforme/accueil.html" target="_blank">
                 <h3 class="project_title">SITE LA PLATEFORME_</h3>
-                <!-- <img src="images/site-la-plateforme.png" alt="site-la-plateforme" class="project_img"> -->
                 <div class="img_div">
                     <div class="fadedbox">
                         <div class="description">Reproduction du site laplateforme.io.</div>
@@ -70,7 +81,6 @@ include_once("includes/header.php");
         <div class="project_div">
             <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/fansite" target="_blank">
                 <h3 class="project_title">FANSITE</h3>
-                <!-- <img src="images/fansite.png" alt="fansite" class="project_img"> -->
                 <div class="img_div">
                     <div class="fadedbox">
                         <div class="description">Premier project html/css.</div>
@@ -82,8 +92,6 @@ include_once("includes/header.php");
                 <p class="project_github">Github</p>
             </a>
         </div>
-
-
 
     </div>
 </body>
