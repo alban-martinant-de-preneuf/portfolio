@@ -23,13 +23,27 @@ include_once("includes/header.php");
 
     <div class="projects_div">
         <div class="project_div">
+            <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/cinetech" target="_blank">
+                <h3 class="project_title">CINETECH</h3>
+                <div class="img_div">
+                    <div class="fadedbox">
+                        <div class="description">Projet d'introduction aux APIs, réaliser avec le modèle MVC, altorouter et autoloader.</div>
+                    </div>
+                    <img src="images/cinetech.png" alt="cinetech" class="project_img" />
+                </div>
+            </a>
+            <a href="https://github.com/alban-martinant-de-preneuf/cinetech" target="_blank">
+                <p class="project_github">Github</p>
+            </a>
+        </div>
+        <div class="project_div">
             <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/super-week/" target="_blank">
                 <h3 class="project_title">SUPER-WEEK</h3>
                 <div class="img_div">
                     <div class="fadedbox">
                         <div class="description">Le but de ce projet était d'implémenter altourouter et l'architecture MVC en PHP et d'utiliser l'asyncrone en javascript.</div>
                     </div>
-                    <img src="images/super-week.png" alt="super-week" class="project_img"/>
+                    <img src="images/super-week.png" alt="super-week" class="project_img" />
                 </div>
             </a>
             <a href="https://github.com/alban-martinant-de-preneuf/super-week" target="_blank">
@@ -43,7 +57,7 @@ include_once("includes/header.php");
                     <div class="fadedbox">
                         <div class="description">Créer un site de e-commerce.</div>
                     </div>
-                    <img src="images/boutique-en-ligne.png" alt="boutique en ligne" class="project_img"/>
+                    <img src="images/boutique-en-ligne.png" alt="boutique en ligne" class="project_img" />
                 </div>
             </a>
             <a href="https://github.com/alban-martinant-de-preneuf/boutique-en-ligne" target="_blank">
@@ -57,7 +71,7 @@ include_once("includes/header.php");
                     <div class="fadedbox">
                         <div class="description">Le but de ce projet était de consolider les compétences en html et css.</div>
                     </div>
-                    <img src="images/voyages.png" alt="super-week" class="project_img"/>
+                    <img src="images/voyages.png" alt="super-week" class="project_img" />
                 </div>
             </a>
             <a href="https://github.com/alban-martinant-de-preneuf/voyages" target="_blank">
@@ -71,7 +85,7 @@ include_once("includes/header.php");
                     <div class="fadedbox">
                         <div class="description">Reproduction du site laplateforme.io.</div>
                     </div>
-                    <img src="images/site-la-plateforme.png" alt="super-week" class="project_img"/>
+                    <img src="images/site-la-plateforme.png" alt="super-week" class="project_img" />
                 </div>
             </a>
             <a href="https://github.com/alban-martinant-de-preneuf/site-la-plateforme" target="_blank">
@@ -85,7 +99,7 @@ include_once("includes/header.php");
                     <div class="fadedbox">
                         <div class="description">Premier project html/css.</div>
                     </div>
-                    <img src="images/fansite.png" alt="super-week" class="project_img"/>
+                    <img src="images/fansite.png" alt="super-week" class="project_img" />
                 </div>
             </a>
             <a href="https://github.com/alban-martinant-de-preneuf/fansite" target="_blank">
