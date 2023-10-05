@@ -1,9 +1,3 @@
-<?php
-
-include_once("includes/header.php");
-
-?>
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -11,102 +5,158 @@ include_once("includes/header.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <title>Alban Martinant de Préneuf</title>
+
+    <!-- owlcarousel -->
+    <link href="styles/owl.theme.default.min.css" rel="stylesheet">
+    <link href="styles/owl.carousel.min.css" rel="stylesheet">
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/owl.carousel.min.js"></script>
+
+    <!-- fontawesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- googlefont -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap" rel="stylesheet">
+
+    <!-- tailwind  -->
+    <link href="dist/output.css" rel="stylesheet">
+
+    <!-- scripts -->
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/carousel.js" defer></script>
+
+    <script src="https://kit.fontawesome.com/247a482759.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <div class="presentation_div">
-        <p>Actuellement en formation de dévelloppement Web à l'école LaPlateforme_, je suis à la recherche d'une alternance pour septembre 2023.</p>
-    </div>
+<body class="relative">
+    <?php
+    include_once("includes/header.php");
+    include_once("includes/variables.php")
+    ?>
+    <main>
+        <section id="hero" class="bg-hero">
+            <div class="w-full h-full backdrop-blur-sm flex items-center justify-center">
+                <div class="mx-auto text-gray text-5xl text-center font-nunito">
+                    <h2>Alban</h2>
+                    <h1>Développeur Web</h1>
+                    <a href="#presentation"><button class="bg-navy text-gray text-xl p-2 rounded hover:bg-opacity-70 mt-4">Qui suis-je ?</button></a>
+                </div>
+            </div>
+        </section>
 
-    <div class="projects_div">
-        <div class="project_div">
-            <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/cinetech" target="_blank">
-                <h3 class="project_title">CINETECH</h3>
-                <div class="img_div">
-                    <div class="fadedbox">
-                        <div class="description">Projet d'introduction aux APIs, réaliser avec le modèle MVC, altorouter et autoloader.</div>
+        <section id="presentation" class="bg-blue text-gray py-7">
+            <div class="max-w-6xl mx-auto px-5">
+                <h2 class="text-center mb-5 text-3xl">Qui suis-je ?</h2>
+                <div class="flex flex-col sm:flex-row space-y-5 sm:space-x-5">
+                    <div class="flex items-center justify-center sm:max-w-[25rem] min-w-[15rem]">
+                        <img src="images/photoLinkedin.png" alt="Alban Martinant de Préneuf" class="rounded-full w-fit">
                     </div>
-                    <img src="images/cinetech.png" alt="cinetech" class="project_img" />
-                </div>
-            </a>
-            <a href="https://github.com/alban-martinant-de-preneuf/cinetech" target="_blank">
-                <p class="project_github">Github</p>
-            </a>
-        </div>
-        <div class="project_div">
-            <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/super-week/" target="_blank">
-                <h3 class="project_title">SUPER-WEEK</h3>
-                <div class="img_div">
-                    <div class="fadedbox">
-                        <div class="description">Le but de ce projet était d'implémenter altourouter et l'architecture MVC en PHP et d'utiliser l'asyncrone en javascript.</div>
+                    <div class="flex flex-col items-center justify-center space-y-3 font-nunito text-lg">
+                        <p>Hello, moi c'est Alban, Développeur Web en formation à LaPlateforme_, une école dont la pédagogie est basée sur les projets</p>
+                        <p>Depuis de nombreuses années, je suis passioné par l'informatique et je me forme en autodidacte sur différentes technologies et langages de programmation.
+                        <p>Après avoir obtenu mon diplôme de Développeur Web et Web Mobile (RNCP niveau Bac+2) l'année dernière, je souhaite trouver une entreprise pour une alternance de 2 ans pour continuer à apprendre et me perfectionner tout en préparent mon diplôme de Concepteur Développeur d'Applications (RNCP niveau Bac+3).</p>
                     </div>
-                    <img src="images/super-week.png" alt="super-week" class="project_img" />
                 </div>
-            </a>
-            <a href="https://github.com/alban-martinant-de-preneuf/super-week" target="_blank">
-                <p class="project_github">Github</p>
-            </a>
-        </div>
-        <div class="project_div">
-            <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/boutique-en-ligne/view/" target="_blank">
-                <h3 class="project_title">BOUTIQUE EN LIGNE</h3>
-                <div class="img_div">
-                    <div class="fadedbox">
-                        <div class="description">Créer un site de e-commerce.</div>
-                    </div>
-                    <img src="images/boutique-en-ligne.png" alt="boutique en ligne" class="project_img" />
-                </div>
-            </a>
-            <a href="https://github.com/alban-martinant-de-preneuf/boutique-en-ligne" target="_blank">
-                <p class="project_github">Github</p>
-            </a>
-        </div>
-        <div class="project_div">
-            <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/voyages/" target="_blank">
-                <h3 class="project_title">VOYAGES</h3>
-                <div class="img_div">
-                    <div class="fadedbox">
-                        <div class="description">Le but de ce projet était de consolider les compétences en html et css.</div>
-                    </div>
-                    <img src="images/voyages.png" alt="super-week" class="project_img" />
-                </div>
-            </a>
-            <a href="https://github.com/alban-martinant-de-preneuf/voyages" target="_blank">
-                <p class="project_github">Github</p>
-            </a>
-        </div>
-        <div class="project_div">
-            <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/site-la-plateforme/accueil.html" target="_blank">
-                <h3 class="project_title">SITE LA PLATEFORME_</h3>
-                <div class="img_div">
-                    <div class="fadedbox">
-                        <div class="description">Reproduction du site laplateforme.io.</div>
-                    </div>
-                    <img src="images/site-la-plateforme.png" alt="super-week" class="project_img" />
-                </div>
-            </a>
-            <a href="https://github.com/alban-martinant-de-preneuf/site-la-plateforme" target="_blank">
-                <p class="project_github">Github</p>
-            </a>
-        </div>
-        <div class="project_div">
-            <a href="https://alban-martinant-de-preneuf.students-laplateforme.io/fansite" target="_blank">
-                <h3 class="project_title">FANSITE</h3>
-                <div class="img_div">
-                    <div class="fadedbox">
-                        <div class="description">Premier project html/css.</div>
-                    </div>
-                    <img src="images/fansite.png" alt="super-week" class="project_img" />
-                </div>
-            </a>
-            <a href="https://github.com/alban-martinant-de-preneuf/fansite" target="_blank">
-                <p class="project_github">Github</p>
-            </a>
-        </div>
+            </div>
+        </section>
 
+        <section id="skills" class="bg-navy text-gray py-7">
+            <div class="max-w-6xl mx-auto px-5">
+                <h2 class="text-center mb-5 text-3xl">Compétences</h2>
+                <div class="flex flex-row justify-between flex-grow">
+                    <div>
+                        <h3 class="mb-4 text-2xl">Langages</h3>
+                        <ul class="space-y-3">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>PHP</li>
+                            <li>SQL</li>
+                            <li>Python</li>
+                    </div>
+                    <div>
+                        <h3 class="mb-4 text-2xl">Frameworks</h3>
+                        <ul class="space-y-3">
+                            <li>Tailwind</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>Symfony</li>
+                            <li>React</li>
+                    </div>
+                    <div>
+                        <h3 class="mb-4 text-2xl">Autres</h3>
+                        <ul class="space-y-3">
+                            <li>Linux</li>
+                            <li>Windows</li>
+                            <li>Apache</li>
+                            <li>MySQL</li>
+                            <li>Git</li>
+                            <li>GitHub</li>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="certifs" class="bg-blue text-gray py-7">
+            <div class="max-w-6xl mx-auto px-5">
+                <h2 class="text-center mb-5 text-3xl">Certifications</h2>
+
+                <div class="owl-carousel owl-theme">
+
+                    <?php foreach ($certificats as $certificat => $image) : ?>
+
+                        <div class="bg-teal rounded shadow-xl text-navy">
+                            <div class="item">
+                                <img class="rounded" src="<?= "images/Certificats/thumbnail/thumb." . $image ?>" alt="<?= $certificat ?>">
+                            </div>
+                            <h5 class="p-3 h-24"><?= $certificat ?></h5>
+                            <button class="certif_btn bg-navy text-gray text-xl p-2 rounded-b hover:bg-opacity-70 mt-4 w-full" id="<?= $image ?>">
+                                Voir le certificat
+                            </button>
+                        </div>
+
+                    <?php endforeach; ?>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="bg-navy text-gray py-7">
+            <div class="max-w-6xl mx-auto px-5">
+                <h2 class="text-center mb-5 text-3xl">Contact</h2>
+                <form action="" method="POST" class="flex flex-col space-y-5" id="contact_form">
+                    <p id="form-message"></p>
+                    <div class="flex flex-col sm:flex-row sm:space-x-5">
+                        <div class="flex flex-col space-y-3">
+                            <label for="name">Nom</label>
+                            <input type="text" name="name" id="name" class="rounded shadow-xl p-2 text-navy" required>
+                        </div>
+                        <div class="flex flex-col space-y-3">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="rounded shadow-xl p-2 text-navy" required>
+                        </div>
+                    </div>
+                    <div class="flex flex-col space-y-3">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" class="rounded shadow-xl p-2 text-navy" required></textarea>
+                    </div>
+                    <button type="submit" name="submit" class="bg-blue text-gray text-xl p-2 rounded hover:bg-opacity-70 mt-4 w-1/3 mx-auto">Envoyer</button>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="modal" class=" hidden fixed z-40 top-0 left-0 w-full h-full bg-gray bg-opacity-50 flex-col items-center justify-center">
+        <div class="relative h-full">
+            <div class="max-w-[1000px] relative mt-[50vh] -translate-y-1/2">
+                <i class="fa-solid fa-xmark absolute top-1 right-2 cursor-pointer text-3xl text-gray-600" id="close_btn"></i>
+                <img src="" alt="" id="certif">
+            </div>
+        </div>
     </div>
 </body>
 
