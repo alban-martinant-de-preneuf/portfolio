@@ -34,6 +34,7 @@
     <?php
     include_once("includes/header.php");
     include_once("includes/variables.php");
+    include_once("visitor.php");
     ?>
     <main>
         <section id="hero" class="bg-hero h-screen">
