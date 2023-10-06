@@ -107,10 +107,8 @@ async function getProjects() {
 // show certif button
 
 const certifBtns = document.querySelectorAll('.certif_btn');
-console.log(certifBtns);
 
 certifBtns.forEach(btn => {
-    console.log(btn);
     btn.addEventListener('click', (e) => {
         const src = e.target.id;
         const modal = document.querySelector('#modal');
@@ -140,7 +138,6 @@ form.addEventListener('submit', (e) => {
         if (response.ok) {
             response.json().then(data => {
                 const message = document.querySelector('#form-message');
-                console.log(data);
                 if (data.success) {
                     message.style.color = 'green';
                     message.innerText = data.message;
@@ -152,7 +149,7 @@ form.addEventListener('submit', (e) => {
             })
         }
     }).catch(error => {
-        console.log(error);
+        console.error(error);
     })
 })
 
