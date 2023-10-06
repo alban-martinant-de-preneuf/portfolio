@@ -95,14 +95,14 @@ async function getProjects() {
 
 // height of the hero section
 
-const header = document.querySelector('header');
-const hero = document.querySelector('#hero');
+// const header = document.querySelector('header');
+// const hero = document.querySelector('#hero');
 
-const headerHeight = header.offsetHeight;
-const windowHeight = window.innerHeight;
-const heroHeight = windowHeight - headerHeight;
+// const headerHeight = header.offsetHeight;
+// const windowHeight = window.innerHeight;
+// const heroHeight = windowHeight - headerHeight;
 
-hero.style.height = `${heroHeight}px`;
+// hero.style.height = `${heroHeight}px`;
 
 // show certif button
 

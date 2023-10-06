@@ -33,11 +33,11 @@
 <body class="relative">
     <?php
     include_once("includes/header.php");
-    include_once("includes/variables.php")
+    include_once("includes/variables.php");
     ?>
     <main>
-        <section id="hero" class="bg-hero">
-            <div class="w-full h-full backdrop-blur-sm flex items-center justify-center">
+        <section id="hero" class="bg-hero h-screen">
+            <div class="w-full h-full backdrop-blur-sm flex items-center justify-center z-0">
                 <div class="mx-auto text-gray text-5xl text-center font-nunito">
                     <h2>Alban</h2>
                     <h1>Développeur Web</h1>
