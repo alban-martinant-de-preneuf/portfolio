@@ -84,7 +84,6 @@
                             <li>Node.js</li>
                             <li>Express</li>
                             <li>Symfony</li>
-                            <li>React</li>
                     </div>
                     <div>
                         <h3 class="mb-4 text-2xl">Autres</h3>
